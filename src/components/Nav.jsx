@@ -1,11 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { House } from "react-bootstrap-icons";
+import { Book } from "react-bootstrap-icons";
+import { CardImage } from "react-bootstrap-icons";
+import { PersonLinesFill } from "react-bootstrap-icons";
+import { Facebook } from "react-bootstrap-icons";
+import { Github } from "react-bootstrap-icons";
+import { TwitterX } from "react-bootstrap-icons";
+import { CodeSlash } from "react-bootstrap-icons";
+
+
+// style={isActive => ({
+//     color: isActive ? '#36D0EA' : '#4FEDD2'
+// })}
 
 const Nav = () => {
     return (
         <div className="sidebar">
             <div className="id">
-                <div className="idcontent">
+                <div className="id-content">
                     <img src=".\public\media\IMG_20231011_175929_937.jpg" alt="profil" />
                     <h3>Maze Kévin</h3>
                 </div>
@@ -14,45 +27,45 @@ const Nav = () => {
             <div className="nav-link">
                 <ul>
                     <li>
-                        <NavLink exact to="/" activeClassName="navActive">
-                            <i className="fa-solid fa-house"></i>
+                        <NavLink to="/" >
+                            <i><House /></i>
                             <span>Accueil</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/knowledges" activeClassName="navActive">
-                            <i className="fa-solid fa-house"></i>
+                        <NavLink to="/knowledges" activeclassname="nav-active">
+                            <i><Book /></i>
                             <span>Expérience</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/portfolio" activeClassName="navActive">
-                            <i className="fa-solid fa-house"></i>
+                        <NavLink to="/portfolio" activeclassname="nav-active">
+                            <i>< CardImage /></i>
                             <span>Portfolio</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/contact" activeClassName="navActive">
-                            <i className="fa-solid fa-house"></i>
+                        <NavLink to="/contact" activeclassname="nav-active">
+                            <i>< PersonLinesFill /></i>
                             <span>Contact</span>
                         </NavLink>
                     </li>
                 </ul>
             </div>
 
-            <div className="socialNetwork">
+            <div className="social-network">
                 <ul>
                     <li>
-                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i className='fab fa-linkedin'></i>Linkedin</a>
+                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i>< Facebook /></i></a>
                     </li>
                     <li>
-                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i className='fab fa-github'></i>GitHub</a>
+                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i>< TwitterX/></i></a>
                     </li>
                     <li>
-                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'></i>Twitter</a>
+                        <a href="https://github.com/KevinMaze" target='_blank' rel="noopener noreferrer"><i>< Github/></i></a>
                     </li>
                     <li>
-                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i className='fab fa-codepen'></i>Codepen</a>
+                        <a href="https://www.google.com" target='_blank' rel="noopener noreferrer"><i>< CodeSlash/></i></a>
                     </li>
                 </ul>
                 <div className='signature'>

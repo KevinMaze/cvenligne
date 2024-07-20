@@ -16,7 +16,7 @@ $black: #333;
 
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
-$min-height: 95vh;
+$minHeight: 95vh;
 
 @mixin verticalCenter {
     display: flex;
@@ -70,14 +70,8 @@ a:visited {
     margin-left: .4rem;
 
     @media screen and (max-width: 850px) {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
-}
-
-.idcontent img {
-    width: 25%;
-    border-radius: $borderRadius;
-    box-shadow: $shadow;
 }
 
 ////////////////////////// End Setting general
